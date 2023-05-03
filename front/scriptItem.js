@@ -1,6 +1,6 @@
 //require("dotenv").config();
-// const backendIPAddress = "3.90.97.139:3000";
-const backendIPAddress = "127.0.0.1:3000";
+const backendIPAddress = "3.90.97.139:3000";
+// const backendIPAddress = "127.0.0.1:3000";
 
 let itemData;
 var userTasks;
