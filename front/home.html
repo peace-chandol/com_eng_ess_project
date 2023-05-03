@@ -1,0 +1,504 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+    rel="stylesheet"
+  />
+  <script src="scriptItem.js" defer></script>
+  <title>Calendar</title>
+</head>
+
+<body class="body2" id="body2">
+  <div class="sidebar">
+    <p class="id" id="id"></p>
+    <p class="name"><span id="username"></span></p>
+    <button class="logout" onclick="logout()">logout</button>
+    <button onclick="deleteAllBadges()">delete</button>
+    <button onclick="deleteAllBadges()">delete</button>
+  </div>
+
+  <div>
+    <button class="event-button" onclick="event_open()">+ new event</button>
+  </div>
+  <div class="event" id="event-all">
+    <button onclick="event_close()" class="event-close">Close</button>
+    <table>
+      <th><p class="event-name-text">Event</p></th>
+      <th>
+        <input class="event-name-input" id="event-name-input" />
+      </th>
+    </table>
+    <table>
+      <th><p class="event-course-text">CourseID</p></th>
+      <th>
+        <input class="event-course-input" />
+      </th>
+    </table>
+    <table>
+      <th><p class="event-date-text">Due date :</p></th>
+      <th>
+        <select class="event-date-date" id="date1">
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+      </th>
+      <th>
+        <select class="event-date-month">
+          <option value="01">JAN</option>
+          <option value="02">FEB</option>
+          <option value="03">MAR</option>
+          <option value="01">APR</option>
+          <option value="01">MAY</option>
+          <option value="01">JUN</option>
+          <option value="01">JUL</option>
+          <option value="01">AUG</option>
+          <option value="01">SEP</option>
+          <option value="01">OCT</option>
+          <option value="01">NOV</option>
+          <option value="01">DEC</option>
+        </select>
+      </th>
+      <th>
+        <select class="event-date-year">
+          <option value="01">2023</option>
+        </select>
+      </th>
+    </table>
+    <table>
+      <th><p class="event-time-text">Deadline :</p></th>
+      <th>
+        <select class="event-time-hour" id="hour1">
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+        </select>
+      </th>
+      <th>
+        <select class="event-time-minute" id="min1">
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+        </select>
+      </th>
+    </table>
+    <p class="event-description-text">Description :</p>
+    <textarea rows="5" class="event-description-input"></textarea>
+    <button onclick="addTask()" class="event-enter">Enter</button>
+  </div>
+
+  <div class="badgeevent" id="badge-all">
+    <button onclick="badge_close()" class="badge-close">Close</button>
+    <table>
+      <th><p class="badge-name-text">Event -></p></th>
+      <th><p class="badge-name-text" id="badgeEvent">Com Ess Eng</p></th>
+    </table>
+    <table>
+      <th><p class="badge-name-text">CourseID -></p></th>
+      <th><p class="badge-name-text" id="badgeCourseID">2110221</p></th>
+    </table>
+    <table>
+      <th><p class="badge-deadline-text">Deadline -></p></th>
+      <th><p class="badge-deadline-text" id="badgeDeadline">23:59</p></th>
+    </table>
+    <table>
+      <th><p class="badge-Status-text">Status -></p></th>
+      <th><p class="badge-status-text" id="badgestatus">done</p></th>
+    </table>
+    <table>
+      <th><p class="badge-description-text">Description -></p></th>
+      <th><p class="badge-description-text" id="badgeDescription">-</p></th>
+    </table>
+  </div>
+
+  <p class="mycourseview">MyCourseView</p>
+
+  <div class="right">
+    <p class="calendar">Calendar</p>
+    <div class="container">
+      <div class="wrapper bg-white rounded shadow w-full">
+        <div class="header">
+          <span class="title">2023 May</span>
+          <div class="buttons">
+            <button class="button button-left">
+              <svg class="icon" viewBox="0 0 16 16">
+                <path d="M8,15a7,7,0,1,0-7-7,7,7,0,0,0,7,7" />
+                <path
+                  d="M8.354,11.354a.5.5,0,0,0,0-.708L5.707,8l2.647-2.646a.5.5,0,1,0-.708-.708l-3,3a.5.5,0,0,0,0,.708l3,3a.5.5,0,0,0,.708,0Z"
+                />
+                <path
+                  d="M11.5,8a.5.5,0,0,0-.5-.5H6a.5.5,0,0,0,0,1h5a.5.5,0,0,0,.5-.5Z"
+                />
+              </svg>
+            </button>
+            <button class="button button-right">
+              <svg class="icon" viewBox="0 0 16 16">
+                <path d="M8,15a7,7,0,1,0-7-7,7,7,0,0,0,7,7" />
+                <path
+                  d="M7.646,11.354a.5.5,0,0,1,0-.708L10.293,8,7.646,5.354a.5.5,0,1,1,.708-.708l3,3a.5.5,0,0,1,0,.708l-3,3a.5.5,0,0,1-.708,0Z"
+                />
+                <path
+                  d="M4.5,8a.5.5,0,0,1,.5-.5h5a.5.5,0,0,1,0,1H5a.5.5,0,0,1-.5-.5Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <table class="schedule-table" id="myTable">
+          <thead>
+            <tr>
+              <th class="day-header">
+                <span class="block lg:hidden">Sunday</span>
+                <span class="hidden lg:block">Sun</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Monday</span>
+                <span class="hidden lg:block">Mon</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Tuesday</span>
+                <span class="hidden lg:block">Tue</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Wednesday</span>
+                <span class="hidden lg:block">Wed</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Thursday</span>
+                <span class="hidden lg:block">Thur</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Friday</span>
+                <span class="hidden lg:block">Fri</span>
+              </th>
+              <th class="day-header">
+                <span class="block lg:hidden">Saturday</span>
+                <span class="hidden lg:block">Sat</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="day">
+                <div class="top">
+                  <span class="number">00</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">01</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">02</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">03</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">04</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">05</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">06</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="day">
+                <div class="top">
+                  <span class="number">07</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">08</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">09</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">10</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">11</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">12</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">13</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="day">
+                <div class="top">
+                  <span class="number">14</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">15</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">16</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">17</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">18</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">19</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">20</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="day">
+                <div class="top">
+                  <span class="number">21</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">22</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">23</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">24</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">25</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">26</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">27</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="day">
+                <div class="top">
+                  <span class="number">28</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">29</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">30</span>
+                </div>
+              </td>
+              <td class="day">
+                <div class="top">
+                  <span class="number">31</span>
+                </div>
+              </td>
+              <td class="day"></td>
+              <td class="day"></td>
+              <td class="day"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>

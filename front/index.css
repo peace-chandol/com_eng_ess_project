@@ -1,0 +1,770 @@
+body {
+    background-color: powderblue;
+    z-index: -1;
+}
+
+.center {
+    margin: auto;
+    top:25%;
+    width: 40%;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+    background: rgb(45, 133, 133);
+}
+
+.login-mycourseview {
+    color: black;
+    text-align: center;
+    font-family: Inter;
+    letter-spacing: 1;
+    font-size: 2.5em;
+    font-weight: 1200;
+}
+
+
+/* .body2 {
+    display: none;
+} */
+
+.id-text {
+    color: black;
+    text-align: center;
+    font-family: Inter;
+    letter-spacing: 1;
+    font-size: 2em;
+    margin-left: 40px;
+}
+
+.id-input {
+    color: black;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.password-text {
+    color: black;
+    text-align: center;
+    font-family: Inter;
+    letter-spacing: 1;
+    font-size: 2em;
+    margin-left: 40px;
+    margin-right: 15px;
+}
+
+.password-input {
+    color: black;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.login {
+    width: 80px;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    letter-spacing: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.login:hover {
+    background: gainsboro;
+    color:black;
+}
+
+.logout {
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    letter-spacing: 1;
+    margin-top: 15px;
+}
+
+.logout:hover {
+    background: gainsboro;
+    color:black;
+}
+
+.sidebar {
+    background-color: teal;
+    height: 100%;
+    width:22%;
+    position: fixed!important;
+	z-index: 4;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.id {
+    color: cyan;
+    font-family: Inter;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.name {
+    color: cyan;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.search-text {
+    color: lightcyan;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.search-input {
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.subject {
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.type {
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.event-button {
+    background-color: aliceblue;
+    z-index: 4;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    left: 0px;
+    bottom: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.event-button:hover {
+    background: lightcyan;
+    color:black;
+}
+
+.event {
+    display: none;
+    left: 40%;
+    top:30%;
+    width: 400px;
+    position: fixed;
+    border-radius: 8px;
+    padding: 10px;
+    background: gainsboro;
+    z-index: 10;
+
+}
+
+.event-close {
+    background: lightpink;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+
+.event-name-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.event-name-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.event-course-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.event-course-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.event-type-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.event-type-input {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-date-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.event-date-date {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-date-month {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-date-year {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+}
+
+.event-time-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 12px;
+}
+
+.event-time-hour {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-time-minute {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.event-description-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+
+.event-description-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    height: 4em;
+    overflow: auto;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+
+.event-enter {
+    background: lightgreen;
+    width: 20%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 1;
+}
+
+.mycourseview {
+    color: black;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-family: Inter;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1;
+    z-index: 3;
+    margin: 0;
+}
+
+.right {
+    background-color: powderblue;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin-left:22%;
+    top:0px
+}
+
+
+.calendar {
+    color:black;
+    font-family: Inter;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 49px;
+}
+
+.container {
+    max-width: 74%;
+    margin: 0 ;
+    margin-left: 40px;
+    margin-right: 2.5em;
+    padding: 0 1rem;
+    left: 50%;
+}
+  
+.wrapper {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+  
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.buttons {
+    display: flex;
+}
+  
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.button-left .icon path:first-child {
+    transform: rotate(180deg);
+}
+  
+.button-right .icon path:first-child {
+    transform: rotate(180deg);
+}
+  
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: gray;
+}
+  
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.schedule-cell {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    height: 2.5rem; 
+    width: 4rem; 
+}
+  
+.day-header {
+    padding: 0.5rem 1rem; 
+    border-right: 1px solid #ccc; 
+    height: 2.5rem;
+    font-size: 0.875rem; 
+    text-align: center; 
+}
+
+.day {
+    padding: 0.5rem 1rem; 
+    border-right: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
+    height: 7.5rem;
+    font-size: 0.875rem; 
+    text-align: center;
+}
+  
+.day-header span {
+    display: inline-block; 
+}
+  
+@media screen and (min-width: 1024px) {
+    .day-header .hidden {
+      display: none; 
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .day-header .block {
+      display: none; 
+    }
+}
+
+.schedule-table td.day-header {
+    width: calc(100% / 7);
+}
+
+.schedule-table td.day {
+    width: calc(100% / 7);
+}
+
+.top{
+    height: 100px;
+    width: 100%;
+}
+
+.number{
+    color: #999;
+}
+
+.badge{
+    background-color: #8A2BE2;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.badge:hover{
+    background: rgb(0, 0, 0);
+    color:rgb(255, 254, 254);
+}
+
+.badge .badge-name{
+    font-weight: bold;
+}
+
+.badge .badge-time{
+    margin-left: 10px;
+}
+
+.badgeevent{
+    display: none;
+    left: 40%;
+    top:30%;
+    width: 600px;
+    position: fixed;
+    border-radius: 8px;
+    padding: 10px;
+    background: gainsboro;
+    z-index: 10;
+}
+
+.badge-close{
+    background: lightpink;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1;
+}
+
+.badge-name-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-name-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.badge-deadline-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-deadline-hours {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-deadline-minutes {
+    color: black;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.badge-status-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-comment-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-comment-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.badge-description-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-description-input {
+    color: black;
+    background: transparent;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin-top: 20px;
+    margin-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.badge-url-text {
+    color: black;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1;
+    padding-right: 10px;
+}
+
+.badge-enter {
+    background: lightgreen;
+    width: 20%;
+    border-radius: 8px;
+    border: 1px solid #AAA;
+    font-family: Inter;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 1;
+}
